@@ -18,6 +18,9 @@ UnityEngine.Application::get_isBatchMode
 UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::get_platform
+UnityEngine.AudioSource::PlayHelper
+UnityEngine.AudioSource::set_clip
+UnityEngine.AudioSource::set_loop
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -521,6 +524,7 @@ UnityEngine.Tilemaps.Tilemap::RefreshTilesNative
 UnityEngine.Tilemaps.TilemapRenderer::OnSpriteAtlasRegistered
 UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_realtimeSinceStartup
+UnityEngine.Time::get_time
 UnityEngine.Time::get_unscaledDeltaTime
 UnityEngine.Time::get_unscaledTime
 UnityEngine.TouchScreenKeyboard::get_active

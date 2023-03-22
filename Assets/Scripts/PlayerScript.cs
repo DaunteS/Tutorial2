@@ -9,18 +9,27 @@ public class PlayerScript : MonoBehaviour
 
     public float speed;
     public Text score;
+    public Text lives;
+    public Text win;
+    public AudioClip musicClip;
+    public AudioClip musicClip2;
+    public AudioSource musicSource;
 
     private int scoreValue = 0;
+    private int livesValue = 3;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         rd2d = GetComponent<Rigidbody2D>();
-        score.text = scoreValue.ToString();
+        score.text = "Score:" + scoreValue.ToString();
+        lives.text = "Lives:" + livesValue.ToString();
+        musicSource.clip = musicClip;
+        musicSource.Play();
+        musicSource.loop = true;
     }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         float hozMovement = Input.GetAxis("Horizontal");
@@ -32,9 +41,34 @@ public class PlayerScript : MonoBehaviour
        if (collision.collider.tag == "Coin")
         {
             scoreValue += 1;
-            score.text = scoreValue.ToString();
+            score.text = "Score:" + scoreValue.ToString();
+            Destroy(collision.collider.gameObject);
+            if (scoreValue == 5)
+            {
+                transform.position = new Vector2(51.0f, 0.0f);
+                livesValue = 3;
+                lives.text = "Lives:" + livesValue.ToString();
+            }
+        }
+        else if (collision.collider.tag == "Enemy")
+        {
+            livesValue -=1;
+            lives.text = "Lives:" + livesValue.ToString();
             Destroy(collision.collider.gameObject);
         }
+     if (scoreValue == 9)
+     {
+        win.text = "You win! Game by Daunte Smith";
+        musicSource.loop = false;
+        musicSource.clip = musicClip2;
+        musicSource.Play();
+        Destroy(this);
+     }
+     if (livesValue == 0)
+     {
+        win.text = "You lose...";
+        Destroy(this);
+     }
 
     }
     private void OnCollisionStay2D(Collision2D collision)

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraScript
+    - EnemyMovement
     - PlayerScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -27,6 +28,14 @@ ScriptsOnlyBuild:
     - Unity.Play.Publisher.Editor.PublisherWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -37,6 +46,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Text
   serializedClasses:
     UnityEngine.CoreModule:
@@ -68,26 +78,36 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 654}
+      Script: {instanceID: 682}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 2848}
     - Class: 114
-      Script: {instanceID: 4716}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 5854}
+      Script: {instanceID: 3984}
     - Class: 114
-      Script: {instanceID: 6290}
+      Script: {instanceID: 4764}
     - Class: 114
-      Script: {instanceID: 6684}
+      Script: {instanceID: 5912}
     - Class: 114
-      Script: {instanceID: 7302}
+      Script: {instanceID: 6354}
     - Class: 114
-      Script: {instanceID: 24544}
+      Script: {instanceID: 6750}
+    - Class: 114
+      Script: {instanceID: 7376}
+    - Class: 114
+      Script: {instanceID: 9756}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -435,6 +455,12 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyMovement
+  - hash:
+      serializedVersion: 2
       Hash: 27ec3360f0c0a6803ba71cc3106480b8
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -537,7 +563,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
+      Hash: c4bdbf8fca7fc12d63b1e2af42f4a960
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerScript
@@ -1054,4 +1080,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/mrsqu/OneDrive/Documents/school/My project/WebGL Builds
+  playerPath: C:/Users/mrsqu/OneDrive/Documents/school/My project/WebGL Builds/Build

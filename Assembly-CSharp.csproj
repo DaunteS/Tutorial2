@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Reference Include="UnityEngine">
@@ -734,8 +735,8 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    <Reference Include="Unity.Play.Publisher.Editor">
+        <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.Play.Publisher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -743,17 +744,26 @@
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+        <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+        <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>C:\Users\mrsqu\OneDrive\Documents\school\My project\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
